@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Ibnu Septian</title>
+  <style>
+    * { box-sizing: border-box; font-family: Arial, Helvetica, sans-serif; }
+    body { margin: 0; background: #eaf2ff; }
+
+    /* NAVBAR */
+    .navbar {
+      background: #1e63d6;
+      color: #fff;
+      padding: 12px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    /* HEADER */
+    .header {
+      background: #b9d6ff;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .avatar {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: #ddd;
+      margin: 0 auto 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      color: #777;
+    }
+
+    /* SECTION */
+    section {
+      background: #fff;
+      margin: 20px auto;
+      padding: 30px;
+      width: 90%;
+      max-width: 900px;
+      border-radius: 6px;
+    }
+    h2 { text-align: center; margin-bottom: 20px; }
+
+    /* PROJECTS */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .project-box {
+      height: 120px;
+      background: #1e63d6;
+      border-radius: 4px;
+    }
+
+    /* CONTACT */
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #1e63d6;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div><strong>Ibnu Septian</strong></div>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <div class="header" id="home">
+    <div class="avatar"><img src="img/OIP copy.png" width="100" height="100"></div>
+    <h2>Ibnu Septian</h2>
+    <p>Desainer Grafis</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Saya adalah Ibnu Septian, seorang desainer grafis yang berfokus pada desain visual kreatif seperti
+      logo, branding, media sosial, dan kebutuhan cetak. Saya senang menciptakan desain yang komunikatif
+      dan menarik secara visual.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-box"></div>
+      <div class="project-box"></div>
+      <div class="project-box"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Nama Lengkap" />
+      <input type="email" placeholder="Email" />
+      <textarea rows="4" placeholder="Pesan"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+</body>
+</html>
